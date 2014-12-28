@@ -136,9 +136,9 @@
     return hasEvent(events, 'snake-die')
   }
 
-  function hasEvent(events) {
+  function hasEvent(events, name) {
     return events.length && events.some(function(x) {
-      return x.type === 'snake-die'
+      return x.type === name
     })
   }
 
